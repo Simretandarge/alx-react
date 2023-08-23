@@ -1,28 +1,34 @@
-import { mount, unmount } from '../../config/setupTests';
+import React from 'react';
+import { mount } from 'enzyme';
+import WithLogging from './WithLogging';
 import Login from '../Login/Login';
-import WithLoggingHOC from './WithLogging';
 
 
-// With Logging is a HOC that logs the component name
-describe('<WithLogging />', () => {
-	afterEach(() => {
-		jest.clearAllMocks();
-	});
-	
-	it(`Tests that console.log contains 'Component' on mount when wrapped element is PURE html`, () => {
-		console.log = jest.fn();
-		const Example = WithLoggingHOC(() => <p>Component</p>);
-		const wrapper = mount(<Example />);
-		expect(console.log).toHaveBeenCalledWith('Component Component was mounted');
-		wrapper.unmount();
-	})
+describe('WithLogging', () => {
 
-	it(`Tests that console.log contains name of wrapped element when mounted or unmounted`, () => {
-		console.log = jest.fn();
-		const Example = WithLoggingHOC(() => <p>Component</p>);
-		const wrapper = mount(<Example />);
-		expect(console.log).toHaveBeenCalledWith('Component Component was mounted');
-		wrapper.unmount();
-		expect(console.log).toHaveBeenCalledWith('Component Component was unmounted');
-	})
+  it('console.log called on mount', () => {
+
+    console.log = jest.fn();
+    const TestWithLogging = WithLogging(() => <p />);
+    const wrapper = mount(<TestWithLogging />);
+    expect(console.log).toHaveBeenCalledWith(`Component Component is mounted`);
+    wrapper.unmount();
+    expect(console.log).toHaveBeenCalledWith(
+      `Component Component is going to unmount`
+    );
+    expect(console.log).toHaveBeenCalledTimes(2);
+  });
+
+  it('correctly logs component name', () => {
+
+    console.log = jest.fn();
+    const LoginWithLogging = WithLogging(Login);
+    const wrapper = mount(<LoginWithLogging />);
+    expect(console.log).toHaveBeenCalledWith(`Component Login is mounted`);
+    wrapper.unmount();
+    expect(console.log).toHaveBeenCalledWith(
+      `Component Login is going to unmount`
+    );
+    expect(console.log).toHaveBeenCalledTimes(2);
+  });
 });

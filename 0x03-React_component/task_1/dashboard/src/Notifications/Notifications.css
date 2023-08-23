@@ -1,21 +1,23 @@
-:root {
-	--primar-color: #E11D3F;
-}
-
 .Notifications {
-	border: 1px solid var(--primar-color);
-	padding: 1rem;
+  border: 3px dashed #e14852;
+  padding: 1em;
+  float: right;
+  margin: 10px 30px 0 0;
 }
 
-.menuItem p {
-	right: 3rem;
-	position: absolute;
+.menuItem {
+  text-align: right;
+  margin-right: 30px;
+}
+
+.Notifications button img {
+  width: 20px;
 }
 
 [data-notification-type="default"] {
-	color: blue;
+  color: blue;
 }
 
 [data-notification-type="urgent"] {
-	color: red;
+  color: red;
 }

@@ -1,19 +1,25 @@
-table {
-	display: table;
-	border: 1px solid;
-	border-collapse: collapse;
-	margin-left: auto;
-	margin-right: auto;
-	width: 90%;
+:root {
+  --table-color: rgba(131, 129, 129, 0.89);
 }
 
-tr th {
-	text-align: start;
-	border-bottom: 1px solid;
+#CourseList {
+  margin: 40px 0 350px 0;
+  border: 1px solid var(--table-color);
+  border-collapse: collapse;
+  width: 85%;
 }
 
-th[colSpan="2"] {
-	text-align: center;
-	border: 1px solid;
-	padding-bottom: 1rem;
+#CourseList th {
+  border-top: 1px solid var(--table-color);
+  border-bottom: 1px solid var(--table-color);
+  text-align: left;
+  font-size: 18px;
+}
+
+#CourseList th[colspan="2"] {
+  text-align: center;
+}
+
+#CourseList td {
+  text-align: left;
 }

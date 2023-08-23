@@ -1,17 +1,21 @@
-import { shallow, mount } from '../../config/setupTests';
 import React from 'react';
+import { shallow } from 'enzyme';
 import BodySection from './BodySection';
 
-
 describe('<BodySection />', () => {
-	it(`Renders h2 and children correctly when no children in props`, () => {
-		const wrapper = shallow(<BodySection title="My title" />);
-		expect(wrapper.exists()).toBe(true);
-	})
-
-	it(`Renders h2 and children correctly when children in props`, () => {
-		const wrapper = shallow(<BodySection title="test title"><p>test children</p></BodySection>)
-		expect(wrapper.find('h2').text()).toBe('test title');
-		expect(wrapper.find('p').text()).toBe('test children');
-	})
-})
+  it('with children and heading', () => {
+    const wrapper = shallow(
+      <BodySection title='test title'>
+        <p>test children node</p>
+      </BodySection>
+    );
+    const div = wrapper.find('.bodySection').first();
+    const h2 = wrapper.find('h2');
+    const p = wrapper.find('p');
+    expect(div.exists()).toEqual(true);
+    expect(h2).toHaveLength(1);
+    expect(h2.text()).toEqual('test title');
+    expect(p).toHaveLength(1);
+    expect(p.text()).toEqual('test children node');
+  });
+});

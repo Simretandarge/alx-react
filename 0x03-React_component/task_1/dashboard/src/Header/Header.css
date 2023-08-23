@@ -1,20 +1,14 @@
 :root {
-	--primary-color: #E11D3F;
-	font: 18px Helvetica, Arial, sans-serif;
+  --principal-color: #e14852;
 }
 
-h1 {
-	margin-left: 3rem;
-}
 .App-header {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	color: var(--primary-color);
-	border-bottom: 3px solid var(--primary-color);
+  display: flex;
+  color: var(--principal-color);
+  align-items: center;
 }
 
-.App-logo {
-	height: 200px;
-	width: 200px;
+.App-header img {
+  width: 200px;
+  height: 200px;
 }

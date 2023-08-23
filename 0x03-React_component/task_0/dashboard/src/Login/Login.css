@@ -1,36 +1,12 @@
 :root {
-	--primary-color: #E11D3F;
-	font: 18px Helvetica, Arial, sans-serif;
+  --principal-color: #e14852;
 }
 
-.App {
-	background-color: #ffffff;
-	display: flex;
-	flex-direction: column;
+.body-login {
+  margin: 50px 0 350px 60px;
+  flex-grow: 1;
 }
 
-.App-body {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 3rem;
-	padding-top: 1rem;
-	min-height: 50vh;
-}
-
-.inputs {
-	display: flex;
-	flex-direction: row;
-}
-
-input {
-	height: 15px;
-	margin-left: 0.2rem;
-}
-
-label {
-	margin-left: 0.3rem;
-}
-
-button {
-	height: 21px;
+.body-login input {
+  margin: 0 20px 0 10px;
 }

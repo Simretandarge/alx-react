@@ -1,25 +1,48 @@
-# React_component
+## 0x04. React component
 
-## Resources
-- [React components](https://intranet.hbtn.io/rltoken/ubcbLEl2Dwr0KQggLP5tBQ)
-- [React Developer Tools](https://intranet.hbtn.io/rltoken/TxiM_lfqc5uKT0EgeA4IxA)
-- [Enzyme Shallow](https://intranet.hbtn.io/rltoken/80Mpegld0PY2QNQE6d3SfA)
-- [Enzyme Mount](https://intranet.hbtn.io/rltoken/J0AdW0LlG3yQxYbuIwjTsg)
-- [Enzyme Unmount](https://intranet.hbtn.io/rltoken/LB7845OI2tK9EKErD4Jxkg)
-- [React Pure components](https://intranet.hbtn.io/rltoken/fmGgdPJcG7NMxMjMjyp7Sg)
-- [React Higher Order Components](https://intranet.hbtn.io/rltoken/7J7n3ZexqujOmaNoGZVBNQ)
-- [Jest mock function](https://intranet.hbtn.io/rltoken/oV4-XN09N7JSN84LT0ErXw)
-  
-## Learning Objectives
-- When to use a Class or a function to create a component
-- The lifecycle of a Class component
-- How to test a component
-- How to utilize a Jest spy to verify that a function is being called correctly
-- What an HOC is and how to use it
-- How to optimize performance and control which components to render
-  
-## Requirements
-- All your files will be interpreted/compiled on Ubuntu 18.04 LTS using ```node 12.x.x``` and npm ```6.x.x```
-- Allowed editors: ```vi```, ```vim```, ```emacs```, ```Visual Studio Code```
-- All your files should end with a new line
-- A ```README.md file```, at the root of the folder of the project, is mandatory
+### :open_file_folder: Specializations - Web Stack programming ― Back-end
+
+
+<p align="center">
+    <img src="https://res.cloudinary.com/carloscuesta/image/upload/v1593531857/blog-featured-images/Scalable_React_Components_architecture.png" alt="Component React">
+</p>
+
+## :closed_book: Resources
+
+**Read or watch**
+
+* [React components](https://reactjs.org/docs/react-component.html)
+* [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+* [Enzyme Shallow](https://enzymejs.github.io/enzyme/docs/api/shallow.html)
+* [Enzyme Mount](https://enzymejs.github.io/enzyme/docs/api/ReactWrapper/mount.html)
+* [Enzyme Unmount](https://enzymejs.github.io/enzyme/docs/api/ReactWrapper/unmount.html)
+* [React Pure components](https://reactjs.org/docs/react-api.html#reactpurecomponent)
+* [React Higher Order Components](https://reactjs.org/docs/higher-order-components.html)
+* [Jest mock function](https://jestjs.io/docs/jest-object)
+
+
+
+## :bulb: Learning Objectives
+At the end of this project, you are expected to be able to explain to anyone, **without the help of Google:**
+
+* When to use a Class or a function to create a component
+* The lifecycle of a Class component
+* How to test a component
+* How to utilize a Jest spy to verify that a function is being called correctly
+* What an HOC is and how to use it
+* How to optimize performance and control which components to render
+
+## :black_nib: Authors 
+
+**Diahan Hudgson** 
+
+## :mag: Where can you find me?
+
+<p align="center">
+<a href="https://twitter.com/diacaroll" target="_blank">
+    <img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/ alt="twitter:diahan-hudgson"></a>
+<a href="https://www.linkedin.com/in/diahan-hudgson/" target="_blank">
+    <img src="https://img.icons8.com/bubbles/100/000000/linkedin.png"/ alt="linkedin:diahan-hudgson"></a>
+<a href="https://diahancaroll.vercel.app/" target="_blank">    
+    <img src="https://img.icons8.com/bubbles/100/000000/web.png"/ alt="website:diahan-hudgson"></a>
+</p>
